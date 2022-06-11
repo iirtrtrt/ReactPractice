@@ -4,6 +4,12 @@ npm view react version
 18.1.0
 
 리액트를 이용하여 route를 구현 하였습니다.
+index.html은 public폴더에, index.js는 src폴더에 위치해 있습니다.
+이미지 파일들은 public의 imgages폴더에 위치해 있습니다.
+App.js를 포함한 js파일(About.js, Contact.js, NavBar.js, PageNotFound.js, Tech.js)들은 src폴더에 위치해 있습니다.
+src폴더에 Style.css파일을 작성하였습니다.
+src폴더안의 resource폴더는 country.json파일이 위치해 있습니다.
+
 네비게이션 바 에서 로고를 클릭할 경우 메인 페이지로 다시 로드가 되며, 다른 메뉴들을 클릭시에는 해당 페이지로 로드가 됩니다.
 각 메뉴들에는 마우스 커서가 올라갈 경우 밑의 바가 생기도록 애니메이션을 넣어두었습니다.
 
@@ -17,7 +23,8 @@ About과 Tech를 클릭 시에는 간단하게 해당 페이지가 로드 되도
 ![화면 캡처 2022-06-11 232840](https://user-images.githubusercontent.com/69069300/173192049-4b3a6701-9485-4c6a-90c8-18ed663d3096.png)
 
 Contact에서는 emailJS를 이용하여 언제든지 제 구글 계정으로 메일이 보내질 수 있도록 만들었습니다.
-Input부분에 유효성 검사를 넣으려고 했으나 시간관계상 어려움이 있어 아쉽게도 만들지 못했습니다. 
+이름과 메일주소, 국가, 본문 내용을 입력받은 후 메일로 보낼 수 있습니다.
+Input부분에 유효성 검사를 넣으려고 했으나 시간관계상 어려움이 있어 아쉽게도 만들지 못했습니다.
 
 ![화면 캡처 2022-06-11 175339](https://user-images.githubusercontent.com/69069300/173181117-cb7dea23-591b-4e01-b0c6-5338e4d58057.png)
 ![화면 캡처 2022-06-11 175402](https://user-images.githubusercontent.com/69069300/173181112-58a633ed-3cf8-4173-9fac-4796bea5fe73.png)

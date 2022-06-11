@@ -1,23 +1,23 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "../Style.css";
-import Select from "react-select";
-import country from "../resource/country.json";
+import Select from "react-select"; // select를 만들기 위해 react-select 추가
+import country from "../resource/country.json"; // resource폴더의 country.json파일 불러오기
 
 export default function Contact() {
-  const options = country.country;
+  const options = country.country; // json파일을 options에 저장
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm("PinchPoint", "PinchPoint", form.current, "b4YvtEGJLegYv-SV7")
+      .sendForm("PinchPoint", "PinchPoint", form.current, "b4YvtEGJLegYv-SV7") // emailJS의 아이디값들
       .then(
         (result) => {
           alert("The email is sent successfully.");
         },
         (error) => {
-          console.log("Failed");
+          alert("Failed");
         }
       );
   };
@@ -45,7 +45,7 @@ export default function Contact() {
               <Select
                 id="selectCountry"
                 options={options}
-                getOptionLabel={(option) => option.name}
+                getOptionLabel={(option) => option.name} // option.name 저장했던 내용에서 name의 값을 불러온다
                 getOptionValue={(option) => option.name}
                 name="userCountry"
                 className="textField text-dark"

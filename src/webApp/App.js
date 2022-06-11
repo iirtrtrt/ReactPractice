@@ -5,8 +5,8 @@ import Tech from "./Tech";
 import NavBar from "./NavBar";
 import Contact from "./Contact";
 import PageNotFound from "./PageNotFound";
+import { BrowserRouter, Routes, Route } from "react-router-dom"; // rotate구현을 위해 react-router-dom 추가
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
@@ -25,7 +25,7 @@ export default function App() {
   );
 }
 
-function Main() {
+function Main() { // route에서 "/"경로를 요청받을 경우 Main엘리먼트를 랜더링
   return (
     <div className="container">
       <div className="row">
@@ -36,7 +36,7 @@ function Main() {
       </div>
       <div className="row">
         <div className="rightContent col">
-        <h1 className="rightContentText">We use AI Technology to</h1>
+          <h1 className="rightContentText">We use AI Technology to</h1>
           <h1 className="rightContentText">revolutionize the way you study</h1>
           <h1 className="rightContentText">
             Improved results are now possible
