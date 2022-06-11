@@ -3,6 +3,7 @@ import "./Style.css";
 import About from "./About";
 import Tech from "./Tech";
 import NavBar from "./NavBar";
+import Contact from "./Contact";
 import PageNotFound from "./PageNotFound";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/" exact element={<Main />} />
           <Route path="/about" element={<About />} />
           <Route path="/tech" element={<Tech />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>

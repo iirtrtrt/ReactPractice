@@ -4,13 +4,13 @@ import "./Style.css";
 export default function About() {
   return (
     <div className="container">
-      <div className="row">
-        <div className="col mt-5">
+      <div className="row mt-5">
+        <div className="col">
           <h1 className="text-center text-capitalize">about</h1>
         </div>
       </div>
-      <div className="row">
-        <div className="col mt-5">
+      <div className="row mt-5">
+        <div className="col">
           <p className="">
             This is about us.This is about us.This is about us.This is about
             us.This is about us.This is about us.This is about us.This is about
