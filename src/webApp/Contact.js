@@ -6,12 +6,12 @@ import country from "../resource/country.json"; // resource폴더의 country.jso
 
 export default function Contact() {
   const options = country.country; // json파일을 options에 저장
-  const form = useRef();
+  const emailForm = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm("PinchPoint", "PinchPoint", form.current, "b4YvtEGJLegYv-SV7") // emailJS의 아이디값들
+      .sendForm("PinchPoint", "PinchPoint", emailForm.current, "b4YvtEGJLegYv-SV7") // emailJS의 아이디값들
       .then(
         (result) => {
           alert("The email is sent successfully.");
@@ -29,7 +29,7 @@ export default function Contact() {
           <h1 className="text-center text-capitalize">Contact us</h1>
         </div>
       </div>
-      <form ref={form} onSubmit={sendEmail}>
+      <form ref={emailForm} onSubmit={sendEmail}>
         <div className="row mt-5">
           <div className="col m-3">
             <div className="row">

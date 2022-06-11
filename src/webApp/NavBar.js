@@ -2,8 +2,7 @@ import React from "react";
 import "../Style.css";
 import { Link } from "react-router-dom";
 
-export default class NavBar extends React.Component {
-  render() {
+export default function NavBar() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light navPadding navColour">
         <div>
@@ -58,5 +57,4 @@ export default class NavBar extends React.Component {
         </div>
       </nav>
     );
-  }
 }
