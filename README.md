@@ -10,8 +10,11 @@ npm view react version
 ![화면 캡처 2022-06-11 175413](https://user-images.githubusercontent.com/69069300/173181069-e894a6ce-f438-40fc-ac8a-300f4145ca1d.png)
 ![화면 캡처 2022-06-11 175424](https://user-images.githubusercontent.com/69069300/173181071-11479733-abc5-4f10-a854-765db6db520f.png)
 ![화면 캡처 2022-06-11 175436](https://user-images.githubusercontent.com/69069300/173181073-28664204-3482-4b62-b1dd-7193219d1b29.png)
+![화면 캡처 2022-06-11 232309](https://user-images.githubusercontent.com/69069300/173191865-1d8c0349-c8b6-4885-85e5-bcc42bd47f4f.png)
 
-About과 Tech를 클릭 시에는 간단하게 해당 페이지가 로드 되도록 하였고, Product와 Careers, Contact는 따로 지정해둔 값이 없어 에러 메세지가 표시될 수 있도록 하였습니다.
+About과 Tech를 클릭 시에는 간단하게 해당 페이지가 로드 되도록 하였고, Product와 Careers는 따로 지정해둔 값이 없어 에러 메세지가 표시될 수 있도록 하였습니다.
+Contact에서는 emailJS를 이용하여 언제든지 제 구글 계정으로 메일이 보내질 수 있도록 만들었습니다.
+Input부분에 유효성 검사를 넣으려고 했으나 시간관계상 어려움이 있어 아쉽게도 만들지 못했습니다. 
 
 ![화면 캡처 2022-06-11 175339](https://user-images.githubusercontent.com/69069300/173181117-cb7dea23-591b-4e01-b0c6-5338e4d58057.png)
 ![화면 캡처 2022-06-11 175402](https://user-images.githubusercontent.com/69069300/173181112-58a633ed-3cf8-4173-9fac-4796bea5fe73.png)
