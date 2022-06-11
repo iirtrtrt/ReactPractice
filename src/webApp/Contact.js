@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import "./Style.css";
+import "../Style.css";
 import Select from "react-select";
-import country from "./resource/country.json";
+import country from "../resource/country.json";
 
 export default function Contact() {
   const options = country.country;
@@ -14,10 +14,10 @@ export default function Contact() {
       .sendForm("PinchPoint", "PinchPoint", form.current, "b4YvtEGJLegYv-SV7")
       .then(
         (result) => {
-          console.log(result.text);
+          alert("The email is sent successfully.");
         },
         (error) => {
-          console.log(error.text);
+          console.log("Failed");
         }
       );
   };
