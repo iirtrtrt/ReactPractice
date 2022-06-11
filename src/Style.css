@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@800&family=Poppins:wght@600&family=Roboto&display=swap");
+
+.background {
+  background-image: url("../public/images/background.png");
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  min-width: 768px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.navbar-toggler-icon {
+  border-radius: 5px;
+  background-color: aliceblue;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  outline: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.textColour {
+  color: aliceblue;
+}
+
+.navPadding {
+  padding: 30px 100px 30px 70px;
+}
+
+.navText {
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  margin: 0px 40px 0px 40px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.navbar-toggler-icon {
+  background-image: url("../public/images/nav_btn.png") !important;
+  background-color: inherit;
+}
+
+.navBtn {
+  width: 50px;
+  height: 50px;
+}
+
+.hoverUnderbar {
+  position: relative;
+}
+
+.hoverUnderbar:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  color: gray;
+  background-color: gray;
+  transform-origin: bottom center;
+  transition: transform 0.25s ease-out;
+}
+
+.hoverUnderbar:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left right;
+}
+
+.navLogoText {
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  text-decoration: inherit;
+  pointer-events: none;
+  margin: 0px 40px 0px 40px;
+}
+
+.rowPosition {
+  position: relative;
+  width: 100vw;
+}
+
+.leftContent {
+  position: absolute;
+  top: 400px;
+  left: 100px;
+  width: auto;
+}
+
+.leftContentText {
+  font-family: "Karla", sans-serif;
+  font-size: 75px;
+}
+
+.rightContent {
+  position: absolute;
+  top: 650px;
+  right: 100px;
+  width: auto;
+}
+
+.rightContentText {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: whitesmoke;
+    color: black;
+  }
+
+  .navLogoText,
+  .navText,
+  .hoverUnderbar:after {
+    color: black;
+  }
+
+  .leftContent,
+  .rightContent {
+    margin-top: 50px;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+  }
+
+  .leftContentText {
+    font-size: 40px;
+  }
+  .rightContentText {
+    font-size: 30px;
+  }
+}
