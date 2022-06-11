@@ -11,7 +11,7 @@ npm view react version
 ![화면 캡처 2022-06-11 175424](https://user-images.githubusercontent.com/69069300/173181071-11479733-abc5-4f10-a854-765db6db520f.png)
 ![화면 캡처 2022-06-11 175436](https://user-images.githubusercontent.com/69069300/173181073-28664204-3482-4b62-b1dd-7193219d1b29.png)
 
-About과 Tech를 클릭 시에는 간단하게 해당 페이지가 로드 되도록 하였고, Product와 Careers, Contact는 따로 지정해둔 값이 없어 에러 메세지가 뜨도록 하였습니다.
+About과 Tech를 클릭 시에는 간단하게 해당 페이지가 로드 되도록 하였고, Product와 Careers, Contact는 따로 지정해둔 값이 없어 에러 메세지가 표시될 수 있도록 하였습니다.
 
 ![화면 캡처 2022-06-11 175402](https://user-images.githubusercontent.com/69069300/173181112-58a633ed-3cf8-4173-9fac-4796bea5fe73.png)
 ![화면 캡처 2022-06-11 175455](https://user-images.githubusercontent.com/69069300/173181115-93c8c07d-d5db-42f5-99e0-d195b9cc4214.png)
